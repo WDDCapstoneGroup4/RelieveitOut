@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
 import { AppComponent } from './app.component';
 import { FrameworkComponent } from './framework/framework.component';
 import { LoginComponent } from './login/login.component';
@@ -17,7 +18,8 @@ import { CrisislineComponent } from './crisisline/crisisline.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { SignupComponent } from './signup/signup.component';
 import { ProfessionaldashboardComponent } from './professionaldashboard/professionaldashboard.component';
-import { ClientdashboardComponent } from './clientdashboard/clientdashboard.component'
+import { ClientdashboardComponent } from './clientdashboard/clientdashboard.component';
+import { CreateAppointmentComponent } from './create-appointment/create-appointment.component'
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { ClientdashboardComponent } from './clientdashboard/clientdashboard.comp
     AboutusComponent,
     SignupComponent,
     ProfessionaldashboardComponent,
-    ClientdashboardComponent
+    ClientdashboardComponent,
+    CreateAppointmentComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +50,8 @@ import { ClientdashboardComponent } from './clientdashboard/clientdashboard.comp
       { path: 'about', component: AboutusComponent },
       { path: 'signup', component: SignupComponent },
       { path: 'clientdashboard', component: ClientdashboardComponent },
-      { path: 'professionaldashboard', component: ProfessionaldashboardComponent }
+      { path: 'professionaldashboard', component: ProfessionaldashboardComponent },
+      {path: 'create-appointment', component:CreateAppointmentComponent}
     ])
   ],
   providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
